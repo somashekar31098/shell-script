@@ -1,22 +1,18 @@
 #!/bin/bash
 
-USERID=$(id -u)
+USERID=$( id -u )
 
-validate(){
-    echo "exit status : $1"
-    echo " what are we doing : $2"    
-}
-
+validate
+   echo " exit status: $1 "
+   echo " what are we doing: $2 "
+   
 if [ $USERID -ne 0 ]
-then
-   echo " please run the script with root access "
-   exit 1 #manually exit if error comes
+then 
+   echo "run the script with root access "
+   exit 1
 else
-  echo " you are super user "
-fi
+   echo "you are super user "
 
 dnf install mysql -y
-validate $1 " installation of  mysql"
- 
-dnf install git -y
-validate $? " installation of git "
+validate $? "installing mysql"
+
