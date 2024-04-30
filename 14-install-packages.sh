@@ -13,4 +13,12 @@ if [ $USERID -NE O ]
   echo "you are super user"
 fi
 
-echo " all packages: $@"
+for i in $@
+do 
+
+echo "package to install: $id"
+
+done 
+
+
+
