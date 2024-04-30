@@ -17,11 +17,6 @@ fi
 
 dnf install mysql -y
 validate $1 " installation of  mysql"
- if 
-   [$? - ne o]
-then 
-  echo "installing .... FAILURE"
-else
-  echo "installing ..... SUCCESS"
-fi
-
+ 
+dnf install git -y
+validate $? " installation of git "
