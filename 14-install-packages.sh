@@ -6,7 +6,7 @@ SCRIPTNAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP.log
 
 validate(){
-   if [ $1 -ne 0 ]
+   if [ $? -ne 0 ]
     then 
        echo " $i is installed skipping "
        exit 1
@@ -15,7 +15,7 @@ validate(){
    fi 
 }
 
-if [ $USERID -NE O ]
+if [ $USERID -ne O ]
   then 
   echo "run the script with root access"
   exit 1
