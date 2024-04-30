@@ -8,10 +8,10 @@ LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP.log
 validate(){
    if [ $? -ne 0 ]
     then 
-       echo " $i is installed skipping "
+       echo " $2 is ....FAILURE "
        exit 1
     else
-       echo " $i is not installed , need to install"
+       echo " $2 is .....SUCCESS"
    fi 
 }
 
@@ -27,8 +27,15 @@ for i in $@
 do 
 
 echo "package to install: $i"
-  dnf list installed $i
-  validate $1 "installing packages"
+  dnf list installed $i &>>$LOGFILE
+  
+  if [$? -eq 0]
+  then 
+  echo " $i already installed ... skipping"
+  else
+  echo "$i not installed....need to install"
+  fi 
+
 done 
 
 
