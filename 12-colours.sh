@@ -11,10 +11,10 @@ N="\e[Om"
 validate(){
    if [ $1 -ne 0 ]
     then 
-       echo " $2 is .... $R FAILURE $N "
+       echo -e " $2 is ....$R FAILURE $N "
        exit 1
     else
-       echo " $2 is .... $R sucess $N"
+       echo -e " $2 is ....$R sucess $N"
    fi 
 }
 
