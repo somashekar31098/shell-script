@@ -2,7 +2,7 @@
 
 number=$1
 
-if [ $number -gt 10]
+if [$number -gt 10]
  then
    echo "iven number $number is grater than 10"
  else
