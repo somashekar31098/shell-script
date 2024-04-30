@@ -33,7 +33,9 @@ echo "package to install: $i"
   then 
   echo " $i already installed ... skipping"
   else
-  echo "$i not installed....need to install"
+  dnf install $i -y &>>$LOGFILE
+  validate $? "installing $i"
+  
   fi 
 
 done 
