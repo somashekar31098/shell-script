@@ -1,19 +1,17 @@
 #!/bin/bash
 
 USERID=$(id -u)
+
 if [ $USERID -ne 0 ]
-then
-   echo "please run this script with route access"
-   exit 1 # manually exit if error occurs"
-else
-   echo "you are super user"
+then 
+  echo "run the script with root access"
+else 
+  echo " you are super user"
 fi
 
 dnf install mysql -y
-if [ $? -ne 0 ]
-  then 
-  echo "installation of mysql is FAILURE"
-  exit 1
-fi
 
-echo "is script is proceeding"
+echo " is script proceeding"
+
+
+
