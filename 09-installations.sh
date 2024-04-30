@@ -21,12 +21,13 @@ then
 fi 
 
 dnf install git -y
- then
-  echo "installation of git is failure"
-  exit 1
- else
-  echo "installation of git is success"
-fi 
+then 
+echo "installation of git is failure"
+exit 1
+else 
+echo "installation of git is success"
+fi
+
 
 
 
