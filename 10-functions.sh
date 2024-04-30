@@ -7,7 +7,7 @@ validate(){
     echo " what are we doing : $2"    
 }
 
-if [ $USERID -ne 0]
+if [ $USERID -ne 0 ]
 then
    echo " please run the script with root access "
    exit 1 #manually exit if error comes
