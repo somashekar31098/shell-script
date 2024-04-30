@@ -2,10 +2,11 @@
 
 USERID=$( id -u )
 
-validate
+validate(){
    echo " exit status: $1 "
    echo " what are we doing: $2 "
-   
+}
+
 if [ $USERID -ne 0 ]
 then 
    echo "run the script with root access "
