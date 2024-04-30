@@ -4,9 +4,9 @@ USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
-R=$(\e[31m)
-Y=$(\e[32m)
-N=$(\e[Om)
+R="\e[31m"
+Y="\e[32m"
+N="\e[Om"
 
 validate(){
    if [ $1 -ne 0 ]
