@@ -15,7 +15,7 @@ validate(){
    fi 
 }
 
-if [ $USERID -ne O ]
+if [ $USERID -ne 0 ]
   then 
   echo "run the script with root access"
   exit 1
