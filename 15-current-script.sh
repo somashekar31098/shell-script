@@ -3,9 +3,9 @@
 COURSE="Devops from current script"
 
 echo "before calling other script, course: $COURSE"
-echo "process id of current script : $$"
+echo "process id of current script: $$"
 
-source ./other-script.sh
+source ./16-other-script.sh
 
 echo "after calling the other script, course: $COURSE"
 
