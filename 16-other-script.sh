@@ -1,7 +1,6 @@
 #!/bin/bash
 
+COURSE="devops from the other script"
 
-COURSE="devops is from other script"
-
-echo "variable value from other script: $COURSE"
-echo "PID of the current script: $$"
+echo "variable value of the other script=$COURSE"
+echo "process id of other script: $$"

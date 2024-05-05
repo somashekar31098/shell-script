@@ -1,11 +1,11 @@
 #!/bin/bash
 
-COURSE="devops from current script"
+COURSE="devops from the current script"
 
-echo "before calling other script , course: $COURSE"
-echo "PID of current script: $$"
+echo "before running current script ,course: $COURSE"
+echo "process id of current script : $$"
 
-source ./16-other-script.sh
+source ./other-script.sh
 
-echo "after calling other script , course: $COURSE"
+echo "after running current script ,course: $COURSE"
 
