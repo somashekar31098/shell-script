@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COURSE="Devops from the other script"
+COURSE="Devops from other script"
 
 echo "variable value of the other script: $COURSE"
 
