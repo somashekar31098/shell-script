@@ -8,4 +8,4 @@ echo "PID of current script: $$"
 source ./16-other-script.sh
 
 echo "after calling other script , course: $COURSE"
-echo "PID of current script: $$"
+
