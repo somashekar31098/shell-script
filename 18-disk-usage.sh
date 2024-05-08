@@ -12,9 +12,9 @@ do
   if 
       [ $USAGE -ge $DISK_THRESHOLD ]
 then 
-     MESSAGE+="$FOLDER is greater than $DISK_THRESHOLD ,current usage = $USAGE"
+     MESSAGE+="$FOLDER is greater than $DISK_THRESHOLD ,current usage = $USAGE /n"
  fi
 
 done <<< $DISK_USAGE
 
-echo "message = $MESSAGE"
+echo -e "message = $MESSAGE"
