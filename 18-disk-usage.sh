@@ -17,6 +17,6 @@ then
 
 done <<< $DISK_USAGE 
 
-echo -e "message = $MESSAGE"
+echo -e "message: $MESSAGE"
 
-echo "$MESSAGE" | mail -s "disk usage data" somadaws1998@gmail.com
+echo "$MESSAGE" |mail -s "disk usage data" somadaws1998@gmail.com
